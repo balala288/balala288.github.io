@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉菜单导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #nav ul li a{
+            background: pink;
+            text-align: center;
+            display: block;
+            padding: 8px 15px;
+            text-decoration: none;
+            color: #000;
+        }
+        #nav ul li a:hover{
+            background: #e84a8a;
+        }
+        #nav ul li ul{
+            display: none;
+        }
+        #nav ul li:hover ul{
+            display: block;
+        }
+        #nav ul li ul li a{
+            background: #fee;
+            text-align: center;
+            display: block;
+        }
+        #nav ul li ul li a:hover{
+            background: #f17bac;
+        }
+        /* 横向排列一级菜单 */
+        #nav > ul > li {
+            float: left;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <ul>
+            <li>
+                <a href=" ">白日提灯</a >
+                <ul>
+                    <li><a href="#">邪恶沙糖橘</a ></li>
+                    <li><a href="#">窝囊西红柿</a ></li>
+                    <li><a href="#">高冷黑加仑</a ></li>
+                    <li><a href="#">送葬哈密瓜</a ></li>
+                    <li><a href="#">疯批青苹果</a ></li>
+                    <li><a href="#">绿茶蓝莓精</a ></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">星期巴</a >
+                <ul>
+                    <li><a href="#">巴丽</a ></li>
+                    <li><a href="#">巴分糖</a ></li>
+                    <li><a href="#">巴骄善</a ></li>
+                    <li><a href="#">巴面玲珑</a ></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
