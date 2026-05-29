@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <!-- 适配手机屏幕 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>警告提示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .warn-text {
+            font-size: 12vw;
+            font-weight: bold;
+            color: #e84a8a;
+            text-align: center;
+            /* 抖动动画 */
+            animation: shake 0.1s infinite alternate;
+        }
+        @keyframes shake {
+            0% {
+                transform: translateX(-5px) rotate(-2deg);
+            }
+            100% {
+                transform: translateX(5px) rotate(2deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="warn-text">你的手机已被柴依彤入侵</div>
+</body>
+</html>
